@@ -22,9 +22,8 @@ To investigate this, you have access to three (fake) registries, each correspond
 
 ## Definitions
 
-For the purposes of this study, we define a person as having "Disease X" on the date of their third ICD-10 diagnosis.
-
-We also define a year to contain 365.25 days.
+- A person has "Disease X" on the date of their third ICD-10 diagnosis.
+- A year contains 365.25 days.
 
 ## Instructions
 
