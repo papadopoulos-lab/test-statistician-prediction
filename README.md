@@ -48,7 +48,7 @@ Create a script that does the following:
 
 ![](output.png)
 
-Run the script, copy the logistic regression output and the plot to a word/docx/text file and write a short paragraph describing the results.
+Run the script, copy the logistic regression output and the plot to a word/docx/text file, and write a short paragraph describing the results.
 
 ## Deliverables
 
