@@ -45,7 +45,7 @@ Create an R script that does the following:
 
 3.  Runs a logistic regression, testing the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?" (Note that you are being tested on technical programming skills, do not consider exposure-time or any other kind of epidemiological issues).
 
-4.  Create a plot similar to this:
+4.  Creates a plot similar to this:
 
 ![](output.png)
 
