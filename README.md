@@ -1,6 +1,6 @@
 # Test: Register Based Study
 
-This is a test of the programming skills required to undertake a register based study.
+This is a test of the programming skills required to undertake a register based study. You may use any statistical programing language/software that you like.
 
 ## Scenario
 
@@ -28,7 +28,7 @@ We also define a year to contain 365.25 days.
 
 ## Instructions
 
-Create an R script that does the following:
+Create a script that does the following:
 
 1.  Creates a single data set that:
 
@@ -41,21 +41,21 @@ Create an R script that does the following:
         -   Outcome: Does this person have three ICD-10 diagnoses? (TRUE/FALSE).
         -   Included in study: FALSE if this person has three ICD-10 diagnoses within the first five years of life, otherwise TRUE.
 
-2.  Saves the data set to an Excel file.
+2.  Saves the data set to an Excel or csv file.
 
 3.  Runs a logistic regression, testing the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?" (Note that you are being tested on technical programming skills, do not consider exposure-time or any other kind of epidemiological issues).
 
-4.  Creates a plot similar to this (consider using [ggplot2](https://ggplot2.tidyverse.org)):
+4.  Creates a plot similar to this (if you are using R, consider using [ggplot2](https://ggplot2.tidyverse.org)):
 
 ![](output.png)
 
-Run the R script, copy the logistic regression output and the plot to a word/docx/text file and write a short paragraph describing the results.
+Run the script, copy the logistic regression output and the plot to a word/docx/text file and write a short paragraph describing the results.
 
 ## Deliverables
 
 Send the:
 
--   R script.
+-   Script.
 -   Excel file data set.
 -   Word/docx/text file.
 
