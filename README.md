@@ -4,7 +4,7 @@ This is a test of the programming skills required to undertake a register based 
 
 ## Scenario
 
-You are investigating the hypothesis "Are antibiotics associated with developing Disease X?"
+You are investigating the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?"
 
 ## Data
 
@@ -24,21 +24,32 @@ To investigate this, you have access to three (fake) registries, each correspond
 
 For the purposes of this study, we define a person as having "Disease X" on the date of their third ICD-10 diagnosis.
 
+We also define a year to contain 365.25 days.
+
 ## Instructions
 
 Create an R script that does the following:
 
 1.  Creates a single data set that:
+
     -   Is 10 000 rows long (i.e. One row per person).
-    -   Has four columns:
+    -   Has six columns:
         -   ID number (NUMERIC INTEGER).
+        -   Date of birth (DATE).
+        -   Exposure: Number of antibiotics prescribed in the first five years of life (NUMERIC INTEGER).
         -   Date of third ICD-10 diagnosis (NA if not applicable, otherwise DATE).
         -   Outcome: Does this person have three ICD-10 diagnoses? (TRUE/FALSE).
-        -   Exposure: Number of antibiotics prescribed before the third ICD-10 diagnosis (NUMERIC INTEGER).
-2.  Saves the data set to an Excel file.
-3.  Runs a logistic regression, testing the hypothesis "Are antibiotics associated with developing Disease X?" (Note that you are being tested on technical programming skills, do not consider exposure-time or any other kind of epidemiological issues).
+        -   Included in study: FALSE if this person has three ICD-10 diagnoses within the first five years of life, otherwise TRUE.
 
-Run the R script, copy the logistic regression output to a word/docx/text file and write a short paragraph describing the results.
+2.  Saves the data set to an Excel file.
+
+3.  Runs a logistic regression, testing the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?" (Note that you are being tested on technical programming skills, do not consider exposure-time or any other kind of epidemiological issues).
+
+4.  Create a plot similar to this:
+
+![](output.png)
+
+Run the R script, copy the logistic regression output and the plot to a word/docx/text file and write a short paragraph describing the results.
 
 ## Deliverables
 

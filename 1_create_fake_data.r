@@ -8,13 +8,15 @@ full_data[, date_of_birth := as.Date("1920-01-01")+id + round(rnorm(.N, sd=100))
 full_data[, number_antibiotics := rpois(.N, lambda = 10)]
 for(i in 1:max(full_data$number_antibiotics)){
   var_antibiotics_date <- paste0("antibiotics_date",i)
-  full_data[number_antibiotics>=i, (var_antibiotics_date) := date_of_birth + 10*365 + 365*i + rnorm(.N, sd=100)]
+  full_data[number_antibiotics>=i, (var_antibiotics_date) := as.Date(round(date_of_birth + 4*365 + 180*i + rnorm(.N, sd=300)))]
+  full_data[get(var_antibiotics_date) < date_of_birth, (var_antibiotics_date) := NA]
 }
 
 full_data[, number_icd10_diagnoses := rpois(.N, lambda = 2)]
 for(i in 1:max(full_data$number_icd10_diagnoses)){
   var_icd10_date <- paste0("icd10_diagnosis_date",i)
-  full_data[number_icd10_diagnoses>=i, (var_icd10_date) := date_of_birth + 10*365 + 365*i + rnorm(.N, sd=100)]
+  full_data[number_icd10_diagnoses>=i, (var_icd10_date) := as.Date(round(date_of_birth + 4*365 + 180*i + rnorm(.N, sd=300)))]
+  full_data[get(var_icd10_date) < date_of_birth, (var_icd10_date) := NA]
 }
 
 birth_registry <- full_data %>%
