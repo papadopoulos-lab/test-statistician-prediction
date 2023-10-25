@@ -1,6 +1,8 @@
 # Test: Register Based Study
 
-This is a test of the statistical and programming skills required to undertake a register based study. You must complete this task in R.
+This is a test of the statistical and programming skills required to undertake a register based study.
+
+You must complete this task in R.
 
 ## Scenario
 
