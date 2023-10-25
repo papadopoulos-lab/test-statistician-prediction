@@ -1,6 +1,6 @@
 # Test: Register Based Study
 
-This is a test of the programming skills required to undertake a register based study. You may use any statistical programing language/software that you like.
+This is a test of the statistical and programming skills required to undertake a register based study. You must complete this task in R.
 
 ## Scenario
 
@@ -27,35 +27,22 @@ To investigate this, you have access to three (fake) registries, each correspond
 
 ## Instructions
 
-Create a script that does the following:
+1. Write an R script that investigates the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?"
 
-1.  Creates a single data set that:
+2. Produce a written document (maximum length 2 pages) that contains the following sections:
 
-    -   Is 10 000 rows long (i.e. One row per person).
-    -   Has six columns:
-        -   ID number (NUMERIC INTEGER).
-        -   Date of birth (DATE).
-        -   Exposure: Number of antibiotics prescribed in the first five years of life (NUMERIC INTEGER).
-        -   Date of third ICD-10 diagnosis (NA if not applicable, otherwise DATE).
-        -   Outcome: Does this person have three ICD-10 diagnoses? (TRUE/FALSE).
-        -   Included in study: FALSE if this person has three ICD-10 diagnoses within the first five years of life, otherwise TRUE.
-
-2.  Saves the data set to an Excel or csv file.
-
-3.  Runs a logistic regression, testing the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?" (Note that you are being tested on technical programming skills, do not consider exposure-time or any other kind of epidemiological issues).
-
-4.  Creates a plot similar to this (if you are using R, consider using [ggplot2](https://ggplot2.tidyverse.org)):
-
-![](output.png)
-
-Run the script, copy the logistic regression output and the plot to a word/docx/text file, and write a short paragraph describing the results.
+- Hypothesis
+- Methods
+- Results
+- Conclusions
+- Tables (maximum 2, does not count towards page limit)
+- Figures (maximum 2, does not count towards page limit)
 
 ## Deliverables
 
 Send the:
 
--   Script.
--   Excel file data set.
--   Word/docx/text file.
+-   R Script.
+-   Written document.
 
 To the requested email address.
