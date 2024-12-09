@@ -1,39 +1,27 @@
-# Test: Register Based Study
+# Test: Prediction
 
-This is a test of the statistical and programming skills required to undertake a register based study.
+This is a test of the statistical and programming skills required to undertake a prediction study.
 
 You must complete this task in R.
 
 ## Scenario
 
-You are investigating the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?"
+You are trying to create a prediction model for the outcome "has Disease X". There are 2000 variables that can be considered for this model.
 
 ## Data
 
-To investigate this, you have access to three (fake) registries, each corresponding to a file inside the folder "data_raw":
+To investigate this, you have access to one data file inside the folder "data_raw":
 
-1.  birth_registry.xlsx (contains 10 000 people).
-    -   id: ID number.
-    -   date_of_birth: Date of birth.
-2.  diagnosis_registry.xlsx (contains only the people who have received an ICD-10 diagnosis of "Disease X").
-    -   id: ID number.
-    -   date_of_icd10_diagnosis: The date at which the person received an ICD-10 diagnosis of "Disease X".
-3.  prescription_registry.xlsx (contains only the people who have received an antibiotic prescription).
-    -   id: ID number.
-    -   date_of_receiving_antibiotics: The date at which the person was prescribed an antibiotic.
-
-## Definitions
-
-- A person has "Disease X" on the date of their third ICD-10 diagnosis.
-- A year contains 365.25 days.
+1. data.xlsx (contains 1 000 people, 1 outcome variable, and 2000 exposure variables)
+   - Outcome: 0/1 (0 = doesn't have Disease X, 1 = has Disease X)
+   - Exposure_1, ..., Exposure_2000: Potential exposure variables.
 
 ## Instructions
 
-1. Write an R script that investigates the hypothesis "Are antibiotics in the first five years of life associated with developing Disease X after five years of life?"
+1. Write an R script that creates a prediction model for the outcome "has Disease X" and evaluates this model.
 
 2. Produce a written document (maximum length 2 pages) that contains the following sections:
 
-- Hypothesis
 - Methods
 - Results
 - Conclusions
